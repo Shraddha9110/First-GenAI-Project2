@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from PIL import Image
 
 # Add project root to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 from src.llm.recommender import RecommendationEngine
 
@@ -142,8 +142,8 @@ with col1:
     search_clicked = st.button("Get Recommendation")
 
 with col2:
-    # Use the local asset image
-    hero_img_path = os.path.join(os.path.dirname(__file__), 'assets', 'hero_banner.png')
+    # Asset is in src/ui/assets
+    hero_img_path = os.path.join(os.path.dirname(__file__), 'src', 'ui', 'assets', 'hero_banner.png')
     if os.path.exists(hero_img_path):
         st.image(hero_img_path, use_column_width=True, caption="Experience Excellence")
     else:
