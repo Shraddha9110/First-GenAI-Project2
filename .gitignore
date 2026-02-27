@@ -1,0 +1,16 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.DS_Store
+node_modules/
+dist/
+build/
+*.log
+venv/
+env/
+# Large vector files can be pushed if they are within limit (~80MB is okay for GitHub)
+# Otherwise, use git-lfs or ignore them if they can be regenerated easily.
+processed_data/

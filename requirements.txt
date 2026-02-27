@@ -1,0 +1,13 @@
+datasets
+pandas
+tqdm
+python-dotenv
+pytest
+chromadb
+sentence-transformers
+faiss-cpu
+groq
+fastapi
+uvicorn
+streamlit
+Pillow
