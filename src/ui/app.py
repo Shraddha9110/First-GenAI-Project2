@@ -8,6 +8,11 @@ from PIL import Image
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
+try:
+    import altair as alt
+except ImportError:
+    pass
+
 from src.llm.recommender import RecommendationEngine
 
 # Load environment variables
